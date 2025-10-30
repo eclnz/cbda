@@ -2,14 +2,13 @@ using Random
 using Plots
 using DataStructures
 
-const SEED = 123
-const N_POINTS = 100
+const SEED = 124
+const N_POINTS = 120
 const KERNEL_SIZE = 21
-const KERNEL_SIGMA = 3.0
+const KERNEL_SIGMA = 2.5
 const ADD_OFFSET = true
 const OFFSET_VALUE = 0.1
-const POINT_OF_INTEREST = 77
-const DISCRETE_LEVELS = 50
+const DISCRETE_LEVELS = 200
 
 Random.seed!(SEED)
 raw_signal::Vector{Float64} = randn(N_POINTS)
@@ -114,14 +113,74 @@ function project_ray_right(signal::Vector{Float64}, idx::Int, target_val::Float6
 end
 
 function project_rays_from_minima(signal::Vector{Float64}, minima_indices::Vector{Int})
-    divisions = Vector{Tuple{Int, Int, Float64}}()
+    minima_coords = Dict{Int, Tuple{Int, Int, Float64}}()
     for min_idx in minima_indices
         target_val = signal[min_idx]
         left = project_ray_left(signal, min_idx, target_val)
         right = project_ray_right(signal, min_idx, target_val)
-        push!(divisions, (left, right, target_val))
+        minima_coords[min_idx] = (left, right, target_val)
     end
-    return divisions
+    return minima_coords
+end
+
+function find_neighbors_at_level(min_idx::Int, candidate_indices::Vector{Int}, signal::Vector{Float64}, minima_coords::Dict{Int, Tuple{Int, Int, Float64}})
+    left_bound, right_bound, _ = minima_coords[min_idx]
+    left_neighbor = nothing
+    right_neighbor = nothing
+    
+    for idx in candidate_indices
+        idx == min_idx && continue
+        
+        if idx >= left_bound && idx <= right_bound
+            if idx < min_idx && (left_neighbor === nothing || signal[idx] < signal[left_neighbor])
+                left_neighbor = idx
+            elseif idx > min_idx && (right_neighbor === nothing || signal[idx] < signal[right_neighbor])
+                right_neighbor = idx
+            end
+        end
+    end
+    
+    return left_neighbor, right_neighbor
+end
+
+function add_edge_pair(edges::Set{Tuple{Int, Int}}, idx1::Int, idx2::Int)
+    push!(edges, (idx1, idx2))
+    push!(edges, (idx2, idx1))
+end
+
+function build_watershed_graph(minima_indices::Vector{Int}, signal::Vector{Float64}, minima_coords::Dict{Int, Tuple{Int, Int, Float64}}, max_iter::Int=100)
+    edges = Set{Tuple{Int, Int}}()
+    edge_info = Vector{Tuple{Int, Int, String}}()
+    
+    isempty(minima_indices) && return edges, edge_info
+
+    sorted_minima = sort(minima_indices, by=x->signal[x])
+    processed = Set{Int}()
+    
+    for (iter, min_idx) in enumerate(sorted_minima[1:min(length(sorted_minima), max_iter)])
+        candidates = [idx for idx in sorted_minima if !(idx in processed)]
+        left_neighbor, right_neighbor = find_neighbors_at_level(min_idx, candidates, signal, minima_coords)
+        
+        if left_neighbor !== nothing
+            add_edge_pair(edges, min_idx, left_neighbor)
+            push!(edge_info, (min_idx, left_neighbor, "iter_$iter"))
+        end
+        
+        if right_neighbor !== nothing
+            add_edge_pair(edges, min_idx, right_neighbor)
+            push!(edge_info, (min_idx, right_neighbor, "iter_$iter"))
+        end
+        
+        push!(processed, min_idx)
+        if left_neighbor !== nothing
+            push!(processed, left_neighbor)
+        end
+        if right_neighbor !== nothing
+            push!(processed, right_neighbor)
+        end
+    end
+
+    return edges, edge_info
 end
 
 kernel::Vector{Float64} = gaussian_kernel(KERNEL_SIZE, KERNEL_SIGMA)
@@ -138,13 +197,12 @@ minima_pq, maxima_pq = find_extrema(smooth_signal, gradient_signal)
 minima_indices = collect(keys(minima_pq))
 maxima_indices = collect(keys(maxima_pq))
 
-divisions = project_rays_from_minima(smooth_signal, minima_indices)
+minima_coords = project_rays_from_minima(smooth_signal, minima_indices)
+
+graph_edges, edge_info = build_watershed_graph(minima_indices, smooth_signal, minima_coords)
 
 p1 = plot(smooth_signal, label="Smooth Signal", xlabel="Index", ylabel="Amplitude", lw=2)
 hline!(p1, [0], linestyle=:dash, color=:black, label="Zero")
-if 1 <= POINT_OF_INTEREST <= length(smooth_signal)
-    vline!(p1, [POINT_OF_INTEREST], linestyle=:dash, color=:red, label="POI", lw=2)
-end
 if length(minima_indices) > 0
     scatter!(p1, minima_indices, smooth_signal[minima_indices], color=:green, markersize=8, markershape=:x, label="Local Minima")
 end
@@ -152,9 +210,26 @@ if length(maxima_indices) > 0
     scatter!(p1, maxima_indices, smooth_signal[maxima_indices], color=:blue, markersize=8, markershape=:x, label="Local Maxima")
 end
 
-for (min_idx, (left, right, target_val)) in zip(minima_indices, divisions)
+left_boundaries = Int[]
+right_boundaries = Int[]
+
+for min_idx in minima_indices
+    left, right, target_val = minima_coords[min_idx]
     plot!(p1, [left, min_idx, right], [target_val, target_val, target_val], 
           linestyle=:dot, color=:purple, linewidth=1, label="")
+    push!(left_boundaries, left)
+    push!(right_boundaries, right)
+end
+
+scatter!(p1, left_boundaries, smooth_signal[left_boundaries], color=:cyan, markersize=4, markershape=:circle, label="Left Bounds")
+scatter!(p1, right_boundaries, smooth_signal[right_boundaries], color=:magenta, markersize=4, markershape=:circle, label="Right Bounds")
+
+colors = Dict("iter_1" => :red, "iter_2" => :orange, "iter_3" => :yellow)
+
+for (idx1, idx2, iter_str) in edge_info
+    color = haskey(colors, iter_str) ? colors[iter_str] : :orange
+    plot!(p1, [idx1, idx2], [smooth_signal[idx1], smooth_signal[idx2]], 
+          linestyle=:dash, color=color, linewidth=1, alpha=0.7, label="")
 end
 
 plot(p1, layout=(2,1), size=(1000,1000))
