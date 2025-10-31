@@ -1,53 +1,53 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" width="5000" height="1200" viewBox="0 0 5000 1200"
-     xmlns="http://www.w3.org/2000/svg" id="fig-db5de148724e40a58471a6fb04415947">
+     xmlns="http://www.w3.org/2000/svg" id="fig-f1ab33694e264f8db6ed2080bcb62989">
 <defs>
-    <clipPath id="fig-db5de148724e40a58471a6fb04415947-clip">
+    <clipPath id="fig-f1ab33694e264f8db6ed2080bcb62989-clip">
         <rect x="0" y="0" width="5000" height="1200"/>
     </clipPath>
 </defs>
 <style type="text/css">
-    #fig-db5de148724e40a58471a6fb04415947 text {
+    #fig-f1ab33694e264f8db6ed2080bcb62989 text {
         pointer-events: none;
         font-family: inherit;
         font-size: 12px;
         fill: #000000;
     }
-    text#fig-db5de148724e40a58471a6fb04415947-title {
+    text#fig-f1ab33694e264f8db6ed2080bcb62989-title {
         font-size: 16.8px;
         fill: #000000;
         text-anchor: middle;
     }
-    #fig-db5de148724e40a58471a6fb04415947-bg {
+    #fig-f1ab33694e264f8db6ed2080bcb62989-bg {
         fill: #FFFFFF;
     }
-    #fig-db5de148724e40a58471a6fb04415947-viewport rect, #fig-db5de148724e40a58471a6fb04415947-viewport path {
+    #fig-f1ab33694e264f8db6ed2080bcb62989-viewport rect, #fig-f1ab33694e264f8db6ed2080bcb62989-viewport path {
         vector-effect: non-scaling-stroke;
         fill-opacity: 1;
     }
-    #fig-db5de148724e40a58471a6fb04415947-viewport text {
+    #fig-f1ab33694e264f8db6ed2080bcb62989-viewport text {
         stroke: #000000;
         stroke-width: 0;
         stroke-opacity: 0.35;
     }
-    #fig-db5de148724e40a58471a6fb04415947-viewport rect:hover, #fig-db5de148724e40a58471a6fb04415947-viewport path:hover {
+    #fig-f1ab33694e264f8db6ed2080bcb62989-viewport rect:hover, #fig-f1ab33694e264f8db6ed2080bcb62989-viewport path:hover {
         fill-opacity: 0.75;
         stroke: #000000;
         stroke-width: 0.5;
     }
-    #fig-db5de148724e40a58471a6fb04415947-viewport + rect {
+    #fig-f1ab33694e264f8db6ed2080bcb62989-viewport + rect {
         fill: #FFFFFF;
         opacity: 0.8;
     }
-    text#fig-db5de148724e40a58471a6fb04415947-details{
+    text#fig-f1ab33694e264f8db6ed2080bcb62989-details{
         fill: #000000;
     }
 </style>
-<g id="fig-db5de148724e40a58471a6fb04415947-frame" clip-path="url(#fig-db5de148724e40a58471a6fb04415947-clip)">
-<rect id="fig-db5de148724e40a58471a6fb04415947-bg" x="0" y="0" width="5000" height="1200"/>
-<text id="fig-db5de148724e40a58471a6fb04415947-title" x="2500" y="24">Profile results</text>
-<g id="fig-db5de148724e40a58471a6fb04415947-viewport" transform="scale(1)">
+<g id="fig-f1ab33694e264f8db6ed2080bcb62989-frame" clip-path="url(#fig-f1ab33694e264f8db6ed2080bcb62989-clip)">
+<rect id="fig-f1ab33694e264f8db6ed2080bcb62989-bg" x="0" y="0" width="5000" height="1200"/>
+<text id="fig-f1ab33694e264f8db6ed2080bcb62989-title" x="2500" y="24">Profile results</text>
+<g id="fig-f1ab33694e264f8db6ed2080bcb62989-viewport" transform="scale(1)">
 <rect x="50" y="985" width="4900" height="15" rx="2" fill="#E1B2FF" data-dinfo=""/>
 <text x="50" dx="4" y="996.25"> in :-1</text>
 <rect x="50" y="970" width="4900" height="15" rx="2" fill="#00B58B" data-dinfo="/cache/build/tester-amdci4-14/julialang/julia-release-1-dot-12/usr/share/julia/stdlib/v1.12/REPL/src/"/>
@@ -66,204 +66,166 @@
 <text x="50" dx="4" y="891.25">_include in loading.jl:2902</text>
 <rect x="50" y="865" width="4900" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
 <text x="50" dx="4" y="876.25">include_string in loading.jl:2842</text>
-<rect x="50" y="850" width="4900" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<rect x="50" y="850" width="4900" height="15" rx="2" fill="#D42137" data-dinfo="./"/>
 <text x="50" dx="4" y="861.25">eval in boot.jl:489</text>
-<rect x="50" y="835" width="4900" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
+<rect x="50" y="835" width="4856.25" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
 <text x="50" dx="4" y="846.25">tfce_3d in tfce.jl:75</text>
-<rect x="50" y="820" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
-<text x="50" dx="4" y="831.25">#tfce_3d#378 in tfce.jl:81</text>
-<rect x="50" y="805" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="816.25">maximum in reducedim.jl:979</text>
-<rect x="50" y="790" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="801.25">#maximum#741 in reducedim.jl:979</text>
-<rect x="50" y="775" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="786.25">_maximum in reducedim.jl:983</text>
-<rect x="50" y="760" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="771.25">#_maximum#743 in reducedim.jl:983</text>
-<rect x="50" y="745" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="756.25">_maximum in reducedim.jl:984</text>
-<rect x="50" y="730" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="741.25">#_maximum#744 in reducedim.jl:984</text>
-<rect x="50" y="715" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="726.25">mapreduce in reducedim.jl:326</text>
-<rect x="50" y="700" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="711.25">#mapreduce#726 in reducedim.jl:326</text>
-<rect x="50" y="685" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="696.25">_mapreduce_dim in reducedim.jl:334</text>
-<rect x="50" y="670" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="681.25">_mapreduce in reduce.jl:436</text>
-<rect x="50" y="655" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="666.25">mapreduce_impl in reduce.jl:269</text>
-<rect x="50" y="640" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="651.25">mapreduce_impl in reduce.jl:263</text>
-<rect x="50" y="625" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="636.25">mapreduce_impl in reduce.jl:263</text>
-<rect x="50" y="610" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="621.25">mapreduce_impl in reduce.jl:264</text>
-<rect x="50" y="595" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="606.25">mapreduce_impl in reduce.jl:263</text>
-<rect x="50" y="580" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="591.25">mapreduce_impl in reduce.jl:264</text>
-<rect x="50" y="565" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="576.25">mapreduce_impl in reduce.jl:264</text>
-<rect x="50" y="550" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="561.25">mapreduce_impl in reduce.jl:264</text>
-<rect x="50" y="535" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="546.25">mapreduce_impl in reduce.jl:263</text>
-<rect x="50" y="520" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="531.25">mapreduce_impl in reduce.jl:264</text>
-<rect x="50" y="505" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="516.25">mapreduce_impl in reduce.jl:264</text>
-<rect x="50" y="490" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="50" dx="4" y="501.25">mapreduce_impl in reduce.jl:255</text>
-<rect x="50" y="475" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="50" dx="4" y="486.25">macro expansion in simdloop.jl:75</text>
-<rect x="59.42" y="820" width="1837.5" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="59.42" dx="4" y="831.25">#tfce_3d#378 in tfce.jl:88</text>
-<rect x="59.42" y="805" width="1837.5" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="59.42" dx="4" y="816.25">Array in boot.jl:647</text>
-<rect x="59.42" y="790" width="1837.5" height="15" rx="2" fill="#E4A71C" data-dinfo="./"/>
-<text x="59.42" dx="4" y="801.25">GenericMemory in boot.jl:588</text>
-<rect x="1896.92" y="820" width="2949.43" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
-<text x="1896.92" dx="4" y="831.25">#tfce_3d#378 in tfce.jl:92</text>
-<rect x="1896.92" y="805" width="18.85" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="1896.92" dx="4" y="816.25">tfce_threshold_level! in array.jl:0</text>
-<rect x="1915.77" y="805" width="65.96" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
-<text x="1915.77" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:43</text>
-<rect x="1915.77" y="790" width="37.69" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="1915.77" dx="4" y="801.25">getindex in essentials.jl:920</text>
-<rect x="1953.46" y="790" width="28.27" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="1953.46" dx="4" y="801.25">* in promotion.jl:434</text>
-<rect x="1953.46" y="775" width="28.27" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="1953.46" dx="4" y="786.25">* in float.jl:497</text>
-<rect x="1981.73" y="805" width="339.23" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="1981.73" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:44</text>
-<rect x="1981.73" y="790" width="131.92" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="1981.73" dx="4" y="801.25">getindex in essentials.jl:919</text>
-<rect x="2113.65" y="790" width="179.04" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="2113.65" dx="4" y="801.25">&lt; in float.jl:623</text>
-<rect x="2320.96" y="805" width="9.42" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
-<text x="2320.96" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:51</text>
-<rect x="2320.96" y="790" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="2320.96" dx="4" y="801.25">setindex! in array.jl:986</text>
-<rect x="2320.96" y="775" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="2320.96" dx="4" y="786.25">_setindex! in array.jl:991</text>
-<rect x="2330.38" y="805" width="47.12" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="2330.38" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:56</text>
-<rect x="2330.38" y="790" width="47.12" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="2330.38" dx="4" y="801.25">getindex in essentials.jl:919</text>
-<rect x="2377.5" y="805" width="28.27" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
-<text x="2377.5" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:60</text>
-<rect x="2377.5" y="790" width="28.27" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="2377.5" dx="4" y="801.25">setindex! in array.jl:986</text>
-<rect x="2377.5" y="775" width="28.27" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="2377.5" dx="4" y="786.25">_setindex! in array.jl:991</text>
-<rect x="2405.77" y="805" width="2091.92" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="2405.77" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:62</text>
-<rect x="2405.77" y="790" width="9.42" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="2405.77" dx="4" y="801.25">add_neighbors_to_frontier! in array.jl:0</text>
-<rect x="2415.19" y="790" width="9.43" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="2415.19" dx="4" y="801.25">add_neighbors_to_frontier! in int.jl:0</text>
-<rect x="2424.62" y="790" width="47.11" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="2424.62" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:0</text>
-<rect x="2471.73" y="790" width="28.27" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
-<text x="2471.73" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:18</text>
-<rect x="2471.73" y="775" width="28.27" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="2471.73" dx="4" y="786.25">- in int.jl:86</text>
-<rect x="2500" y="790" width="433.46" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="2500" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:19</text>
-<rect x="2500" y="775" width="47.12" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="2500" dx="4" y="786.25">+ in int.jl:87</text>
-<rect x="2547.12" y="775" width="282.69" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="2547.12" dx="4" y="786.25">div in int.jl:301</text>
-<rect x="2829.81" y="775" width="103.65" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="2829.81" dx="4" y="786.25">rem in int.jl:302</text>
-<rect x="2933.46" y="790" width="254.42" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
-<text x="2933.46" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:20</text>
-<rect x="2933.46" y="775" width="65.96" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="2933.46" dx="4" y="786.25">+ in int.jl:87</text>
-<rect x="2999.42" y="775" width="188.46" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="2999.42" dx="4" y="786.25">rem in int.jl:302</text>
-<rect x="3187.88" y="790" width="150.77" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="3187.88" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:22</text>
-<rect x="3187.88" y="775" width="65.97" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="3187.88" dx="4" y="786.25">&lt; in int.jl:83</text>
-<rect x="3253.85" y="775" width="84.8" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="3253.85" dx="4" y="786.25">&gt; in operators.jl:425</text>
-<rect x="3253.85" y="760" width="84.8" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="3253.85" dx="4" y="771.25">&lt; in int.jl:83</text>
-<rect x="3338.65" y="790" width="169.62" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
-<text x="3338.65" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:23</text>
-<rect x="3508.27" y="790" width="9.42" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="3508.27" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:24</text>
-<rect x="3508.27" y="775" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="3508.27" dx="4" y="786.25">+ in int.jl:87</text>
-<rect x="3517.69" y="790" width="763.27" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
-<text x="3517.69" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:25</text>
-<rect x="3517.69" y="775" width="537.12" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="3517.69" dx="4" y="786.25">&gt;= in operators.jl:472</text>
-<rect x="3517.69" y="760" width="537.12" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="3517.69" dx="4" y="771.25">&lt;= in float.jl:624</text>
-<rect x="4054.81" y="775" width="9.42" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="4054.81" dx="4" y="786.25">* in promotion.jl:434</text>
-<rect x="4054.81" y="760" width="9.42" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="4054.81" dx="4" y="771.25">* in float.jl:497</text>
-<rect x="4280.96" y="790" width="94.23" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="4280.96" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:26</text>
-<rect x="4280.96" y="775" width="94.23" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="4280.96" dx="4" y="786.25">setindex! in array.jl:986</text>
-<rect x="4280.96" y="760" width="94.23" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="4280.96" dx="4" y="771.25">_setindex! in array.jl:991</text>
-<rect x="4375.19" y="790" width="122.5" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
-<text x="4375.19" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:28</text>
-<rect x="4375.19" y="775" width="122.5" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="4375.19" dx="4" y="786.25">setindex! in array.jl:986</text>
-<rect x="4375.19" y="760" width="122.5" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="4375.19" dx="4" y="771.25">_setindex! in array.jl:991</text>
-<rect x="4497.69" y="805" width="18.85" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
-<text x="4497.69" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:68</text>
-<rect x="4497.69" y="790" width="18.85" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="4497.69" dx="4" y="801.25">getindex in essentials.jl:920</text>
-<rect x="4516.54" y="805" width="122.5" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="4516.54" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:69</text>
-<rect x="4516.54" y="790" width="18.84" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="4516.54" dx="4" y="801.25">setindex! in array.jl:985</text>
-<rect x="4516.54" y="775" width="18.84" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="4516.54" dx="4" y="786.25">convert in number.jl:7</text>
-<rect x="4516.54" y="760" width="18.84" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="4516.54" dx="4" y="771.25">Float32 in float.jl:342</text>
-<rect x="4535.38" y="790" width="37.7" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="4535.38" dx="4" y="801.25">setindex! in array.jl:986</text>
-<rect x="4535.38" y="775" width="37.7" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="4535.38" dx="4" y="786.25">_setindex! in array.jl:991</text>
-<rect x="4573.08" y="790" width="9.42" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="4573.08" dx="4" y="801.25">getindex in essentials.jl:920</text>
-<rect x="4582.5" y="790" width="56.54" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="4582.5" dx="4" y="801.25">+ in promotion.jl:433</text>
-<rect x="4582.5" y="775" width="18.85" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="4582.5" dx="4" y="786.25">+ in float.jl:495</text>
-<rect x="4601.35" y="775" width="37.69" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
-<text x="4601.35" dx="4" y="786.25">promote in promotion.jl:404</text>
-<rect x="4601.35" y="760" width="37.69" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="4601.35" dx="4" y="771.25">_promote in promotion.jl:379</text>
-<rect x="4601.35" y="745" width="37.69" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="4601.35" dx="4" y="756.25">convert in number.jl:7</text>
-<rect x="4601.35" y="730" width="37.69" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="4601.35" dx="4" y="741.25">Float64 in float.jl:345</text>
-<rect x="4639.04" y="805" width="207.31" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
-<text x="4639.04" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:72</text>
-<rect x="4639.04" y="790" width="197.88" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
-<text x="4639.04" dx="4" y="801.25">iterate in range.jl:921</text>
-<rect x="4639.04" y="775" width="141.34" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
-<text x="4639.04" dx="4" y="786.25">== in promotion.jl:637</text>
-<rect x="4846.35" y="820" width="103.65" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="4846.35" dx="4" y="831.25">#tfce_3d#378 in tfce.jl:97</text>
-<rect x="4846.35" y="805" width="47.11" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
-<text x="4846.35" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:44</text>
-<rect x="4893.46" y="805" width="56.54" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
-<text x="4893.46" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:72</text>
-<rect x="4893.46" y="790" width="47.12" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
-<text x="4893.46" dx="4" y="801.25">iterate in range.jl:921</text>
+<rect x="50" y="820" width="116.67" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
+<text x="50" dx="4" y="831.25">#tfce_3d#12 in tfce.jl:89</text>
+<rect x="50" y="805" width="116.67" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="50" dx="4" y="816.25">Array in boot.jl:647</text>
+<rect x="50" y="790" width="116.67" height="15" rx="2" fill="#F6A60A" data-dinfo="./"/>
+<text x="50" dx="4" y="801.25">GenericMemory in boot.jl:588</text>
+<rect x="166.67" y="820" width="4579.16" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="166.67" dx="4" y="831.25">#tfce_3d#12 in tfce.jl:92</text>
+<rect x="166.67" y="805" width="14.58" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="166.67" dx="4" y="816.25">tfce_threshold_level! in array.jl:0</text>
+<rect x="181.25" y="805" width="189.58" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="181.25" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:43</text>
+<rect x="181.25" y="790" width="102.08" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="181.25" dx="4" y="801.25">getindex in essentials.jl:920</text>
+<rect x="283.33" y="790" width="87.5" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="283.33" dx="4" y="801.25">* in promotion.jl:434</text>
+<rect x="283.33" y="775" width="87.5" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="283.33" dx="4" y="786.25">* in float.jl:497</text>
+<rect x="370.83" y="805" width="758.34" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
+<text x="370.83" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:44</text>
+<rect x="370.83" y="790" width="306.25" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="370.83" dx="4" y="801.25">getindex in essentials.jl:919</text>
+<rect x="677.08" y="790" width="364.59" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="677.08" dx="4" y="801.25">&lt; in float.jl:623</text>
+<rect x="1129.17" y="805" width="14.58" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="1129.17" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:53</text>
+<rect x="1129.17" y="790" width="14.58" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="1129.17" dx="4" y="801.25">setindex! in array.jl:986</text>
+<rect x="1129.17" y="775" width="14.58" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="1129.17" dx="4" y="786.25">_setindex! in array.jl:991</text>
+<rect x="1143.75" y="805" width="14.58" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
+<text x="1143.75" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:55</text>
+<rect x="1143.75" y="790" width="14.58" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="1143.75" dx="4" y="801.25">&gt; in operators.jl:425</text>
+<rect x="1143.75" y="775" width="14.58" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="1143.75" dx="4" y="786.25">&lt; in int.jl:83</text>
+<rect x="1158.33" y="805" width="102.09" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="1158.33" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:56</text>
+<rect x="1158.33" y="790" width="102.09" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="1158.33" dx="4" y="801.25">getindex in essentials.jl:919</text>
+<rect x="1260.42" y="805" width="29.16" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
+<text x="1260.42" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:60</text>
+<rect x="1260.42" y="790" width="29.16" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="1260.42" dx="4" y="801.25">setindex! in array.jl:986</text>
+<rect x="1260.42" y="775" width="29.16" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="1260.42" dx="4" y="786.25">_setindex! in array.jl:991</text>
+<rect x="1289.58" y="805" width="3047.92" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="1289.58" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:62</text>
+<rect x="1289.58" y="790" width="29.17" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="1289.58" dx="4" y="801.25">add_neighbors_to_frontier! in array.jl:0</text>
+<rect x="1318.75" y="790" width="14.58" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="1318.75" dx="4" y="801.25">add_neighbors_to_frontier! in array.jl:991</text>
+<rect x="1333.33" y="790" width="58.34" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="1333.33" dx="4" y="801.25">add_neighbors_to_frontier! in int.jl:0</text>
+<rect x="1391.67" y="790" width="116.66" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
+<text x="1391.67" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:0</text>
+<rect x="1508.33" y="790" width="72.92" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="1508.33" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:18</text>
+<rect x="1508.33" y="775" width="72.92" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="1508.33" dx="4" y="786.25">- in int.jl:86</text>
+<rect x="1581.25" y="790" width="525" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
+<text x="1581.25" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:19</text>
+<rect x="1581.25" y="775" width="14.58" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="1581.25" dx="4" y="786.25">+ in int.jl:87</text>
+<rect x="1595.83" y="775" width="291.67" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="1595.83" dx="4" y="786.25">div in int.jl:301</text>
+<rect x="1887.5" y="775" width="204.17" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="1887.5" dx="4" y="786.25">rem in int.jl:302</text>
+<rect x="2106.25" y="790" width="320.83" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="2106.25" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:20</text>
+<rect x="2106.25" y="775" width="87.5" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="2106.25" dx="4" y="786.25">+ in int.jl:87</text>
+<rect x="2193.75" y="775" width="233.33" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="2193.75" dx="4" y="786.25">rem in int.jl:302</text>
+<rect x="2427.08" y="790" width="277.09" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
+<text x="2427.08" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:22</text>
+<rect x="2427.08" y="775" width="102.09" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="2427.08" dx="4" y="786.25">&lt; in int.jl:83</text>
+<rect x="2529.17" y="775" width="175" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="2529.17" dx="4" y="786.25">&gt; in operators.jl:425</text>
+<rect x="2529.17" y="760" width="175" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="2529.17" dx="4" y="771.25">&lt; in int.jl:83</text>
+<rect x="2704.17" y="790" width="247.91" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="2704.17" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:23</text>
+<rect x="2952.08" y="790" width="1225" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
+<text x="2952.08" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:25</text>
+<rect x="2952.08" y="775" width="729.17" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="2952.08" dx="4" y="786.25">&gt;= in operators.jl:472</text>
+<rect x="2952.08" y="760" width="729.17" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="2952.08" dx="4" y="771.25">&lt;= in float.jl:624</text>
+<rect x="3681.25" y="775" width="58.33" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="3681.25" dx="4" y="786.25">* in promotion.jl:434</text>
+<rect x="3681.25" y="760" width="58.33" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="3681.25" dx="4" y="771.25">* in float.jl:497</text>
+<rect x="4177.08" y="790" width="116.67" height="15" rx="2" fill="#2CA3FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="4177.08" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:26</text>
+<rect x="4177.08" y="775" width="116.67" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="4177.08" dx="4" y="786.25">setindex! in array.jl:986</text>
+<rect x="4177.08" y="760" width="116.67" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="4177.08" dx="4" y="771.25">_setindex! in array.jl:991</text>
+<rect x="4293.75" y="790" width="43.75" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
+<text x="4293.75" dx="4" y="801.25">add_neighbors_to_frontier! in tfce.jl:28</text>
+<rect x="4293.75" y="775" width="43.75" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="4293.75" dx="4" y="786.25">setindex! in array.jl:986</text>
+<rect x="4293.75" y="760" width="43.75" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="4293.75" dx="4" y="771.25">_setindex! in array.jl:991</text>
+<rect x="4337.5" y="805" width="43.75" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
+<text x="4337.5" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:66</text>
+<rect x="4337.5" y="790" width="29.17" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="4337.5" dx="4" y="801.25">* in float.jl:497</text>
+<rect x="4366.67" y="790" width="14.58" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="4366.67" dx="4" y="801.25">^ in promotion.jl:482</text>
+<rect x="4366.67" y="775" width="14.58" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="4366.67" dx="4" y="786.25">^ in math.jl:1138</text>
+<rect x="4366.67" y="760" width="14.58" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="4366.67" dx="4" y="771.25">reinterpret in essentials.jl:733</text>
+<rect x="4381.25" y="805" width="14.58" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="4381.25" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:68</text>
+<rect x="4381.25" y="790" width="14.58" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="4381.25" dx="4" y="801.25">getindex in essentials.jl:920</text>
+<rect x="4395.83" y="805" width="87.5" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
+<text x="4395.83" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:69</text>
+<rect x="4395.83" y="790" width="14.59" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="4395.83" dx="4" y="801.25">setindex! in array.jl:985</text>
+<rect x="4395.83" y="775" width="14.59" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="4395.83" dx="4" y="786.25">convert in number.jl:7</text>
+<rect x="4395.83" y="760" width="14.59" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="4395.83" dx="4" y="771.25">Float32 in float.jl:342</text>
+<rect x="4410.42" y="790" width="72.91" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="4410.42" dx="4" y="801.25">+ in promotion.jl:433</text>
+<rect x="4410.42" y="775" width="14.58" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="4410.42" dx="4" y="786.25">+ in float.jl:495</text>
+<rect x="4425" y="775" width="58.33" height="15" rx="2" fill="#6FDC91" data-dinfo="./"/>
+<text x="4425" dx="4" y="786.25">promote in promotion.jl:404</text>
+<rect x="4425" y="760" width="58.33" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="4425" dx="4" y="771.25">_promote in promotion.jl:379</text>
+<rect x="4425" y="745" width="58.33" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="4425" dx="4" y="756.25">convert in number.jl:7</text>
+<rect x="4425" y="730" width="58.33" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="4425" dx="4" y="741.25">Float64 in float.jl:345</text>
+<rect x="4483.33" y="805" width="262.5" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="4483.33" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:72</text>
+<rect x="4483.33" y="790" width="247.92" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="4483.33" dx="4" y="801.25">iterate in range.jl:921</text>
+<rect x="4483.33" y="775" width="145.84" height="15" rx="2" fill="#E1B2FF" data-dinfo="./"/>
+<text x="4483.33" dx="4" y="786.25">== in promotion.jl:637</text>
+<rect x="4745.83" y="820" width="160.42" height="15" rx="2" fill="#00B58B" data-dinfo="/home/ed/git/cbda/"/>
+<text x="4745.83" dx="4" y="831.25">#tfce_3d#12 in tfce.jl:97</text>
+<rect x="4745.83" y="805" width="87.5" height="15" rx="2" fill="#6FDC91" data-dinfo="/home/ed/git/cbda/"/>
+<text x="4745.83" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:44</text>
+<rect x="4745.83" y="790" width="43.75" height="15" rx="2" fill="#2CA3FF" data-dinfo="./"/>
+<text x="4745.83" dx="4" y="801.25">&lt; in float.jl:623</text>
+<rect x="4833.33" y="805" width="72.92" height="15" rx="2" fill="#E1B2FF" data-dinfo="/home/ed/git/cbda/"/>
+<text x="4833.33" dx="4" y="816.25">tfce_threshold_level! in tfce.jl:72</text>
+<rect x="4833.33" y="790" width="58.34" height="15" rx="2" fill="#00B58B" data-dinfo="./"/>
+<text x="4833.33" dx="4" y="801.25">iterate in range.jl:921</text>
 </g></g>
 <script><![CDATA[
 // Snap.svg 0.3.0
@@ -651,10 +613,10 @@ f+=g+"]",i[b]=f}return Function("val","return Snap.path.toString.call(["+i+"])")
 <script><![CDATA[
 if (typeof require === 'function' && define.amd) {
     require(['ProfileSVG'], function (ProfileSVG) {
-        ProfileSVG.initialize("fig-db5de148724e40a58471a6fb04415947");
+        ProfileSVG.initialize("fig-f1ab33694e264f8db6ed2080bcb62989");
     });
 } else {
-    ProfileSVG.initialize("fig-db5de148724e40a58471a6fb04415947");
+    ProfileSVG.initialize("fig-f1ab33694e264f8db6ed2080bcb62989");
 }
 ]]></script>
 </svg>
