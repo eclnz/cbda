@@ -4,8 +4,8 @@
         {
             "type": "julia",
             "request": "launch",
-            "name": "Run conv.jl",
-            "program": "${workspaceFolder}/conv.jl",
+            "name": "Run benchmark_tfce.jl",
+            "program": "${workspaceFolder}/benchmark_tfce.jl",
             "stopOnEntry": false,
             "cwd": "${workspaceFolder}",
             "juliaEnv": "${command:activeJuliaEnvironment}"
