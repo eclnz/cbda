@@ -1,10 +1,6 @@
-using Mmap
-using Statistics
-using InteractiveUtils
 using StaticArrays
 using LinearAlgebra
 using LoopVectorization
-using BenchmarkTools
 
 function voxel_covariances(data::Array{T,3}) where T
     n_channels, n_voxels, n_subjects = size(data)
@@ -170,27 +166,3 @@ function voxel_covariances_static(data::Array{T,3}, subject_indices::AbstractVec
 
     return variances
 end
-
-x = rand(Float32, 3, 1_000, 100);
-
-@assert all(isapprox.(voxel_covariances(x), voxel_covariances_op(x), rtol=1e-5, atol=1e-6))
-@assert all(isapprox.(voxel_covariances(x), voxel_covariances_op2(x), rtol=1e-5, atol=1e-6))
-@assert all(isapprox.(voxel_covariances(x), voxel_covariances_static(x), rtol=1e-5, atol=1e-6))
-@assert all(isapprox.(voxel_covariances(x), compute_cov_trace_all_voxels(x, collect(1:size(x, 3))), rtol=1e-5, atol=1e-6))
-@time voxel_covariances(x);
-@time voxel_covariances_op(x);
-@time voxel_covariances_op2(x);
-@time voxel_covariances_static(x);
-@time compute_cov_trace_all_voxels(x, collect(1:size(x, 3)));
-nothing
-
-# 935.985 μs (12003 allocations: 1.85 MiB)
-# 1.050 ms (7 allocations: 35.46 KiB)
-# 927.389 μs (9 allocations: 35.57 KiB)
-# 232.324 μs (5 allocations: 35.35 KiB)
-
-# println("\n=== Native Assembly for 3x3 Static Array (your actual use case) ===")
-# cov_mat3 = @MMatrix zeros(Float32, 3, 3)
-# mean_vec3 = @MVector zeros(Float32, 3)
-# data3 = rand(Float32, 3, 1000, 100)
-# print(@code_native arr_covariance!(cov_mat3, data3, mean_vec3, 1, 100))

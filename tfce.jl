@@ -1,6 +1,6 @@
 using LoopVectorization
 
-function add_neighbors_to_frontier!(
+@inline function add_neighbors_to_frontier!(
     frontier::AbstractVector{Int}, frontier_len::Int, visited::AbstractVector{Bool}, stat::AbstractVector{T}, h::T,
     cidx::Int, nx::Int, ny::Int, nz::Int
 ) where T
@@ -21,14 +21,14 @@ function add_neighbors_to_frontier!(
     return frontier_len
 end
 
-function tfce_threshold_level!(tfce::AbstractVector{T}, stat::AbstractVector{T}, visited::AbstractVector{Bool}, 
+function tfce_threshold_level!(tfce::AbstractVector{T}, stat::AbstractVector{T}, visited::AbstractVector{Bool},
                       frontier::AbstractVector{Int}, cluster::AbstractVector{Int}, h::T, t_min::T, 
-                      E::Float64, H::Float64, nx::Int, ny::Int, nz::Int) where T
+                      E::Float64, H::Float64, nx::Int, ny::Int, nz::Int, skip::Int=1) where T
     height_part = (h - t_min)^H
     
     fill!(visited, false)
     
-    for idx in eachindex(stat)
+    @inbounds for idx in 1:skip:length(stat)
         if stat[idx] < h || visited[idx]
             continue
         end
@@ -52,7 +52,7 @@ function tfce_threshold_level!(tfce::AbstractVector{T}, stat::AbstractVector{T},
         
         if cluster_len > 0
             contribution = (cluster_len^E) * height_part
-            for i in 1:cluster_len
+            @turbo for i in 1:cluster_len
                 cidx = cluster[i]
                 tfce[cidx] += contribution
             end
@@ -60,24 +60,23 @@ function tfce_threshold_level!(tfce::AbstractVector{T}, stat::AbstractVector{T},
     end
 end
 
-function tfce_3d(t_stat::Array{T,3}; E=0.5, H=2.0, dh=0.1) where T
+function tfce_3d(t_stat::Array{T,3}; E=0.5, H=2.0, dh=0.1, skip=1) where T
     dims = size(t_stat)
     nx, ny, nz = dims
     t_stat_flat = reshape(t_stat, length(t_stat))
     tfce_flat = zeros(T, length(t_stat))
     t_min = convert(T, minimum(t_stat))
     t_max = convert(T, maximum(t_stat_flat))
-    
+
     dh_T = convert(T, dh)
-    thresholds = dh_T:dh_T:t_max
-    
+    thresholds = collect(dh_T:dh_T:t_max)
     visited = zeros(Bool, nx*ny*nz)
     max_voxels = nx * ny * nz
     frontier = Vector{Int}(undef, max_voxels)
     cluster = Vector{Int}(undef, max_voxels)
     
     for h in thresholds
-        tfce_threshold_level!(tfce_flat, t_stat_flat, visited, frontier, cluster, h, t_min, E, H, nx, ny, nz)
+        tfce_threshold_level!(tfce_flat, t_stat_flat, visited, frontier, cluster, h, t_min, E, H, nx, ny, nz, skip)
     end
     
     return reshape(tfce_flat, dims)
